@@ -1,0 +1,115 @@
+
+
+										Project and Developer Details
+
+Project Name : Virtual Key for Your Repositories
+
+Project Detail : 
+
+
+The given code represents a simple file management system for a virtual repository. Let's go through the code and provide a write-up explaining its functionality:
+
+The main class is `FileMain`, which contains the `main` method responsible for running the application. It interacts with the user through a `Scanner` object and provides a menu-driven interface for various operations.
+
+The `FileOperations` class encapsulates the file operations such as viewing all files, adding a new file, deleting a file, and searching for a file. Here's an explanation of each method:
+
+1. `viewAllFiles()`: This method displays a list of files in ascending order from the specified directory. It uses the `list()` method of the `File` class to obtain the file names, converts them into a list, and then sorts and prints the files. If the directory is empty, it displays an appropriate message.
+
+2. `addNewFile(String filename, String content)`: This method adds a new file to the specified directory. It first checks if the file already exists by checking if the file name with the ".txt" extension is present in the list of files obtained from the directory. If the file already exists, it displays a message and returns. Otherwise, it creates a new file with the specified name and content using `createNewFile()`. It then writes the content to the file using a `FileWriter` and closes the writer. Finally, it displays a success message.
+
+3. `deleteFile(String filename)`: This method deletes a file from the specified directory. It obtains a list of files from the directory using `listFiles()`, converts it into a `List`, and checks if it's empty. If the list is empty, it displays a message. Otherwise, it iterates over the list and compares the file names with the provided filename. If a match is found, it deletes the file using `delete()` and displays a success message. If no match is found, it displays a message indicating that the file is not present.
+
+4. `searchFile(String filename)`: This method searches for a file in the specified directory. It obtains a list of file names from the directory, checks if it's empty, and then checks if the list contains the provided filename with the ".txt" extension. If the file is found, it displays a message indicating that the file is present. Otherwise, it displays a message indicating that the file is not present.
+
+The code overall provides basic functionality for managing files in a specific directory. It allows users to view all files, add new files, delete files, and search for files. It incorporates error handling for cases such as an empty directory or files that already exist.
+
+
+
+Developer Detail: 
+
+Developer Name : Atiya Mujawar
+
+
+
+Sprint Detail of the Project
+
+
+Sprint Goal: Develop a basic file management system with essential functionalities.
+
+Sprint Duration: 2 weeks
+
+Sprint Backlog:
+
+Task: Set up project structure
+
+	Create a new Java project.
+	Set up the folder structure and necessary packages.
+	Create the VirtualKeyOption class.
+
+Task: Implement ViewAllFiles method
+
+	Define the ViewAllFiles method in the VirtualKeyOption class.
+	Update the method to use the correct directory path.
+	List all files in the specified directory.
+	Handle the case when the directory is empty.
+
+Task: Implement AddNewFile method
+
+	Define the AddNewFile method in the VirtualKeyOption class.
+	Update the method to use the correct directory path.
+	Create a new file with the given name with a default text in the specified directory.
+
+Task: Implement SearchFile method
+
+	Define the SearchFile method in the VirtualKeyOption class.
+	Update the method to use the correct directory path.
+	Iterate through the files in the directory and search for a file with the given name.
+	Display appropriate messages indicating if the file is found or not.
+
+Task: Implement DeleteFile method
+
+	Define the DeleteFile method in the VirtualKeyOption class.
+	Update the method to use the correct directory path.
+	Iterate through the files in the directory and search for a file with the given name.
+	If the file is found, delete it. Otherwise, display an appropriate message.
+
+Task: Test and Debug
+
+	Write unit tests for each method to ensure their correctness.
+	Test the file management system by performing various operations.
+	Debug and fix any issues or errors that arise during testing.
+
+Task: Refactor and Optimize
+
+	Review the code for any duplication, unnecessary code, or potential improvements.
+	Refactor the code to improve its readability, maintainability, and performance.
+	Optimize the file management system for better efficiency.
+
+Sprint Review:
+
+	Review the implemented functionalities of the file management system.
+	Ensured that all users stories for this sprint are completed successfully.
+	Gathered feedback and identified the necessary improvements or additional features.
+
+Sprint Retrospective:
+
+	Reflect on the sprint and discuss what went well and what could be improved.
+	Note any lessons learned or best practices discovered during the development process.
+	Identify areas for improvement in the next sprint.
+
+Java Core Concepts are used in Virtual Key 
+
+
+	OOPs Cocepts
+	Collections 
+	Exception Handling 
+	File Operation
+	File System Manuplation
+
+GitHub repository to verfiy the project
+
+https://github.com/AtiyaMujawar/SimplilearnPhase1
+
+Conclusion
+
+The file management system project is a basic implementation that allows users to perform essential file operations such as listing files, adding files, searching for files, and deleting files within a specified directory. It utilizes core concepts like file operations, file system manipulation, exception handling, arrays and sorting, and object-oriented programming principles. The project provides a user-friendly interface and handles exceptions gracefully. It can be expanded and improved to incorporate additional features, but it serves as a solid foundation for building m
